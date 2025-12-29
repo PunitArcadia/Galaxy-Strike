@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,7 +15,10 @@ public class Movement : MonoBehaviour
     private void Update()
     {
         ProcessTranslation();
-        ProcessRotation();
+        //if (allowRotation && movement != Vector2.zero)
+        //{
+        //    ProcessRotation();
+        //}
     }
 
     private void ProcessTranslation()
@@ -26,7 +29,8 @@ public class Movement : MonoBehaviour
         float yOffset = movement.y * controlSpeed * Time.deltaTime;
         float yRaw = transform.localPosition.y + yOffset;
         float yFinal = Mathf.Clamp(yRaw, -yRange, yRange);
-        transform.localPosition = new Vector3(xFinal, yFinal, 0f);
+        Vector3 currentPos = transform.localPosition;
+        transform.localPosition = new Vector3(xFinal, yFinal, currentPos.z);
     }
 
     private void ProcessRotation()

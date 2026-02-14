@@ -1,41 +1,36 @@
 # Galaxy Strike
 
-A top-down space shooter prototype built in **Unity**, focusing on core combat mechanics and arcade-style gameplay.
+A top-down space shooter prototype built in **Unity**.
 
-This project was built as part of my learning journey to understand shooting mechanics, enemy interactions, and gameplay loops.
-
----
-
-## 🎮 Gameplay Overview
-- Player-controlled spaceship movement
-- Shooting projectiles to destroy enemies
-- Enemy spawning and basic behaviors
-- Score-based progression
+This project focuses on implementing core combat mechanics including aiming, continuous firing, enemy interaction, and score tracking.
 
 ---
 
-## 🧠 What I Learned
-- Implementing player shooting mechanics
-- Enemy spawning and management
-- Collision-based damage handling
-- Core combat gameplay loops
-- Managing simple progression logic
+## 🎮 Gameplay Features
+- Mouse-based aiming system
+- Continuous laser firing using Unity’s Input System
+- Enemy ships with collision and destruction logic
+- Score tracking system
+- Background music and scene transitions
+
+---
+
+## 🧠 Focus of This Project
+This project was created to explore:
+
+- Combat loop implementation
+- Player weapon systems
+- Enemy interaction
+- Basic score management
+- Integrating animation and timeline elements
+
+Unlike Rocket Boost, this project has not been refactored into a modular architecture and remains closer to its original implementation.
 
 ---
 
 ## 🛠 Tech Stack
 - Unity
 - C#
-
----
-
-## 📌 Project Purpose
-This project focuses on **combat fundamentals** and **arcade gameplay loops**, and serves as a prototype rather than a fully polished game.
-
----
-
-## 🚀 Possible Improvements
-- Modular weapon system
-- Improved enemy AI behaviors
-- Better separation of gameplay systems
-- Visual and audio feedback polish
+- Unity Input System
+- Particle Systems
+- Timeline & Animation
